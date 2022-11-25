@@ -3,7 +3,7 @@
 
 ## Environment
 
-Windows11
+Windows10 / Windows11
 
 ## Setup
 
@@ -11,9 +11,13 @@ Powershellを使ってコマンドのみでインストール
 
 ### Install
 
-1. `Powershell`を「管理者として実行」![Test Image 1](img/install01.PNG "cap1")
+1. `Powershell`を「管理者として実行」
 
-1. `wsl -l -o`で利用可能なディストリビューション一覧を表示![Test Image 2](img/install02.PNG "cap2")
+    ![Test Image 1](img/install01.PNG "cap1")
+
+1. `wsl -l -o`で利用可能なディストリビューション一覧を表示
+
+    ![Test Image 2](img/install02.PNG "cap2")
 
 1. `wsl --install -d {$distribution}`で`$distribution`をインストール
 
@@ -24,25 +28,31 @@ Powershellを使ってコマンドのみでインストール
 
     ![Test Image 3](img/install03.PNG "cap3")
 
+1. PCを再起動
 
-1. PCを再起動![Test Image 4](img/install04.PNG "cap4")
-
+    ![Test Image 4](img/install04.PNG "cap4")
 
 ### Setting
 
-1. あとは普通のLinux distributionsの扱い
-    1. usernameを入力
-    1. passwordを入力 (`passwd`コマンドで再設定可能)
-    1. 必要なパッケージの取得 (任意)
-        1. `sudo apt update`
-        1. `sudo apt upgrade -y`
-        1. `sudo apt install build-essential -y`
-        1. HelloWorldへ
+あとは普通のLinux distributionsの扱い
+
+1. usernameを入力
+1. passwordを入力 (`passwd`コマンドで再設定可能)
+1. 必要なパッケージの取得 (任意)
+    1. `sudo apt update`
+    1. `sudo apt upgrade -y`
+    1. `sudo apt install build-essential -y`
+    1. HelloWorldへ
 
 ### VSCode
 
 1. アドオン`Remote Development`をインストール
+
+    ![Test Image 5](img/vscode01.PNG "cap5")
+
 1. 画面左下緑のボタンから「WSLでフォルダを開く」ことが可能
+
+    ![Test Image 6](img/vscode02.PNG "cap6")
 
 ## Network
 
