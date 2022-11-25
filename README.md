@@ -1,13 +1,16 @@
 
 # WSL memorandum
 
+## Theme
+
+- Powershellを使ってコマンドのみでWSL環境構築
+- なんも知らなくてもHelloWorldできるようになる
+
 ## Environment
 
 Windows10 / Windows11
 
 ## Setup
-
-Powershellを使ってコマンドのみでインストール
 
 ### Install
 
@@ -59,16 +62,36 @@ Powershellを使ってコマンドのみでインストール
 うまくネットワークに接続できないとき
 
 1. DNSに問題がある場合
-    1. `cat /etc/resolv.conf`
-    1. `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
+
+    ```bash
+    sudo rm /etc/resolv.conf
+    sudo sh -c "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
+    ```
+
+    [こちら](https://qiita.com/kkato233/items/1fc71bde5a6d94f1b982)より
+
+    wslでは`/etc/resolv.conf`が自動生成され、nameserverが設定されるが、この設定が良くない場合がある(?)
 
 1. セキュリティソフトに問題がある場合
+
+    基本的にファイアウォールの設定が必要
+
+    1. [McAfee-1](https://kcm.trellix.com/corporate/index?page=content&id=KB94601)
+    1. [Symantec-1](https://teratail.com/questions/59081)
+    1. [Symantec-2](https://kemasoft.net/?vm/wsl2%A4%C8SEP%A4%C8stone)
+    1. [Symantec-3](https://jpdebug.com/p/2820485)
 
 ### Proxy
 
 ## SSH (Git/GitHub)
 
-## Down grade to WSL1
+## Downgrade to WSL1
+
+1. [こちら](https://yoshinorin.net/articles/2020/08/22/downgrade-wsl2-to-wsl1/)より
+
+    ```powershell
+    wsl --set-version {$distribution} 1
+    ```
 
 ## Reference
 
@@ -77,5 +100,7 @@ Powershellを使ってコマンドのみでインストール
 1. <https://qiita.com/yo_kanyukari/items/37421f497b7ffaa75502>
 
 1. <https://qiita.com/2019Shun/items/5ab290a4117a00e373b6>
+
+1. <https://qiita.com/kkato233/items/1fc71bde5a6d94f1b982>
 
 1. <>
