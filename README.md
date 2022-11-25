@@ -11,8 +11,10 @@ Powershellを使ってコマンドのみでインストール
 
 ### Install
 
-1. `Powershell`を「管理者として実行」
-1. `wsl -l -o`で利用可能なディストリビューション一覧を表示
+1. `Powershell`を「管理者として実行」![Test Image 1](img/install01.PNG "cap1")
+
+1. `wsl -l -o`で利用可能なディストリビューション一覧を表示![Test Image 2](img/install02.PNG "cap2")
+
 1. `wsl --install -d {$distribution}`で`$distribution`をインストール
 
     ```powershell
@@ -20,7 +22,11 @@ Powershellを使ってコマンドのみでインストール
     wsl --install -d Ubuntu-18.04
     ```
 
-1. PCを再起動
+    ![Test Image 3](img/install03.PNG "cap3")
+
+
+1. PCを再起動![Test Image 4](img/install04.PNG "cap4")
+
 
 ### Setting
 
@@ -36,7 +42,7 @@ Powershellを使ってコマンドのみでインストール
 ### VSCode
 
 1. アドオン`Remote Development`をインストール
-1. 画面左下から「WSLでフォルダを開く」ことが可能
+1. 画面左下緑のボタンから「WSLでフォルダを開く」ことが可能
 
 ## Network
 
@@ -52,7 +58,7 @@ Powershellを使ってコマンドのみでインストール
 
 ### Proxy
 
-## SSH (Git)
+## SSH (Git/GitHub)
 
 ## Down grade to WSL1
 
