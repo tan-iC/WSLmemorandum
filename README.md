@@ -56,15 +56,13 @@ Powershellを使ってコマンドのみでインストール
 
 ## Network
 
-### NameServer
+うまくネットワークに接続できないとき
 
-1. うまくネットワークに接続できないとき
+1. DNSに問題がある場合
+    1. `cat /etc/resolv.conf`
+    1. `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
 
-    1. DNSに問題がある場合
-        1. `cat /etc/resolv.conf`
-        1. `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
-
-    1. セキュリティソフトに問題がある場合
+1. セキュリティソフトに問題がある場合
 
 ### Proxy
 
@@ -73,3 +71,11 @@ Powershellを使ってコマンドのみでインストール
 ## Down grade to WSL1
 
 ## Reference
+
+1. <https://learn.microsoft.com/ja-jp/windows/wsl/install#manual-installation-steps>
+
+1. <https://qiita.com/yo_kanyukari/items/37421f497b7ffaa75502>
+
+1. <https://qiita.com/2019Shun/items/5ab290a4117a00e373b6>
+
+1. <>
