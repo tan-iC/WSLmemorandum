@@ -31,13 +31,26 @@ Powershellを使ってコマンドのみでインストール
         1. `sudo apt update`
         1. `sudo apt upgrade -y`
         1. `sudo apt install build-essential -y`
+        1. HelloWorldへ
 
 ### VSCode
 
 1. アドオン`Remote Development`をインストール
-1. 画面左下からWSLでフォルダを開くことが可能
+1. 画面左下から「WSLでフォルダを開く」ことが可能
 
 ## Network
+
+### NameServer
+
+1. うまくネットワークに接続できないとき
+
+    1. DNSに問題がある場合
+        1. `cat /etc/resolv.conf`
+        1. `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
+
+    1. セキュリティソフトに問題がある場合
+
+### Proxy
 
 ## SSH (Git)
 
