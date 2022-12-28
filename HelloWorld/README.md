@@ -3,20 +3,24 @@
 
 ## C
 
-1. `gcc`は``によりインストール済み
+1. `gcc`は`sudo apt install build-essential -y`によりインストール済み
 
 1. [src](src/c "src1")をコンパイル・実行
 
     ```bash
+    gcc
+    ./a.out
     ```
 
 ## C++
 
-1. `g++`は``によりインストール済み
+1. `g++`は`sudo apt install build-essential -y`によりインストール済み
 
 1. [src](src/cpp "src2")をコンパイル・実行
 
     ```bash
+    g++
+    ./a.out
     ```
 
 ## Python
@@ -29,6 +33,7 @@
 1. [src](src/py "src3")を実行
 
     ```bash
+    python3 ./py/helloworld.py
     ```
 
 ## LaTeX
