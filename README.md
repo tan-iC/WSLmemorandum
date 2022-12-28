@@ -4,7 +4,7 @@
 ## Theme
 
 - Powershellを使ってコマンドのみでWSL環境構築
-- なんも知らなくてもHelloWorldできるようになる
+- なんも知らなくてもC, C++, Python, LaTeXのHelloWorldできるようになる
 
 ## Environment
 
@@ -45,7 +45,7 @@ Windows10 / Windows11
     1. `sudo apt update`
     1. `sudo apt upgrade -y`
     1. `sudo apt install build-essential -y`
-    1. HelloWorldへ
+    1. [HelloWorld](HelloWorld/README.md "doc1")へ
 
 ### VSCode
 
