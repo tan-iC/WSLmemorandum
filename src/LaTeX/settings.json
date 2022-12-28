@@ -1,0 +1,23 @@
+// home/${userName}/.vscode-server/data/Machine/settings.json
+{
+    // ビルドコマンド
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    // .latexmkrc に書かれたディレクトリに設定すること
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    // Viewer 関係の設定
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.zoom": "page-width",
+}

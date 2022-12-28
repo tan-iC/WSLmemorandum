@@ -80,5 +80,6 @@ sudo tlmgr update --self --all
 
 ## 参考文献
 
-1. <>
+1. <https://zenn.dev/minatoneko/articles/b4038eb6524199>
 1. <https://texwiki.texjp.org/?Linux#texlive>
+1. <>
